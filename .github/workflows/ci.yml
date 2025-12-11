@@ -35,3 +35,12 @@ jobs:
         -Dsonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }}
         -Dsonar.organization=${{ secrets.SONAR_ORGANIZATION }}
         -Dsonar.host.url=https://sonarcloud.io
+
+    - name: Package with Maven
+      run: mvn -B package
+
+    - name: Upload build artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: ci-calculator-jar
+        path: target/*.jar

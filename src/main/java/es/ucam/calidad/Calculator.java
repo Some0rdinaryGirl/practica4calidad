@@ -1,5 +1,7 @@
 package es.ucam.calidad;
 
+//Pequeño cambio para disparar el CI
+
 /**
  * Clase de ejemplo para la práctica de Integración Continua.
  * Proporciona operaciones básicas de cálculo.

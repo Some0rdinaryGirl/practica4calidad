@@ -7,14 +7,13 @@ import org.junit.jupiter.api.Test;
 
 class CalculatorTest {
 
-	@Test
-	@DisplayName("La suma de 2 + 3 debe ser 5 (test roto a propósito)")
-	void testAdd() {
-	    Calculator calculator = new Calculator();
-	    int result = calculator.add(2, 3);
-	    assertEquals(6, result, "2 + 3 debería ser 6"); // <--- MAL A PROPÓSITO
-	}
-
+    @Test
+    @DisplayName("La suma de 2 + 3 debe ser 5")
+    void testAdd() {
+        Calculator calculator = new Calculator();
+        int result = calculator.add(2, 3);
+        assertEquals(5, result, "2 + 3 debería ser 5");
+    }
 
     @Test
     @DisplayName("La multiplicación de 3 * 4 debe ser 12")

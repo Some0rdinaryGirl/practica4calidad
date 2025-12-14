@@ -12,7 +12,7 @@ class CalculatorTest {
     void testAdd() {
         Calculator calculator = new Calculator();
         int result = calculator.add(2, 3);
-        assertEquals(5, result, "2 + 3 debería ser 5");
+        assertEquals(6, result, "2 + 3 debería ser 5");
     }
 
     @Test
